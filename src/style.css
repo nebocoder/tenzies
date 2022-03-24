@@ -14,14 +14,14 @@ body {
 main {
   width: 80vw;
   max-width: 480px;
-  aspect-ratio: 1;
   border-radius: 10px;
   background: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  gap: 2em;
+  padding: 1.5em;
 }
 
 .dice-container {
@@ -43,7 +43,33 @@ main {
   cursor: pointer;
 }
 
+.roll-btn {
+  width: 50%;
+  padding: 0.75em 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  background: #5035ff;
+  color: #fff;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 7px;
+  border: none;
+}
+
+.roll-btn:focus {
+  outline: none;
+}
+
+.roll-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
 @media (min-width: 480px) {
+  main {
+    padding: 3em;
+  }
+
   .die-num {
     font-size: 2rem;
   }
