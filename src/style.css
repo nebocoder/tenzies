@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b2434;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 80vw;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
