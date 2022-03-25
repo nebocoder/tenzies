@@ -27,6 +27,11 @@ export default function App() {
   }
 
   function rollDice() {
+    if (tenzies) {
+      setDice(allNewDice());
+      setTenzies(false);
+    }
+
     setDice((prevDice) => {
       return prevDice.map((die) => (die.isHeld ? die : generateNewDie()));
     });
