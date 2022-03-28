@@ -55,6 +55,10 @@ main {
   cursor: pointer;
 }
 
+.die-num {
+  width: 100%;
+}
+
 .held {
   background-color: #59e391;
 }
@@ -88,10 +92,6 @@ main {
 
   main {
     padding: 3em;
-  }
-
-  .die-num {
-    font-size: 2rem;
   }
 
   .dice-container {
